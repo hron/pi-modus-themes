@@ -1,0 +1,13 @@
+{
+  "name": "pi-modus-themes",
+  "version": "1.0.0",
+  "description": "Modus Operandi and Modus Vivendi themes for pi coding agent",
+  "keywords": ["pi-package", "pi-theme", "modus", "modus-operandi", "modus-vivendi"],
+  "license": "GPL-3.0",
+  "pi": {
+    "themes": ["./themes"]
+  },
+  "scripts": {
+    "generate": "node src/generate.js"
+  }
+}
