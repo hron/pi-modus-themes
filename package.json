@@ -1,13 +1,35 @@
 {
   "name": "pi-modus-themes",
   "version": "1.0.0",
+  "type": "module",
   "description": "Modus Operandi and Modus Vivendi themes for pi coding agent",
-  "keywords": ["pi-package", "pi-theme", "modus", "modus-operandi", "modus-vivendi"],
-  "license": "GPL-3.0",
+  "keywords": [
+    "pi-package",
+    "pi-theme",
+    "modus",
+    "modus-operandi",
+    "modus-vivendi"
+  ],
+  "license": "MIT",
   "pi": {
-    "themes": ["./themes"]
+    "themes": [
+      "./themes"
+    ]
+  },
+  "files": [
+    "themes",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
-    "generate": "node src/generate.js"
+    "generate": "node src/generate.js",
+    "test": "node --test 'test/**/*.test.js'",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^17"
   }
 }
