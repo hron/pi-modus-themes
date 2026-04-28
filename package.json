@@ -1,6 +1,7 @@
 {
   "name": "pi-modus-themes",
   "version": "1.0.0",
+  "type": "module",
   "description": "Modus Operandi and Modus Vivendi themes for pi coding agent",
   "keywords": [
     "pi-package",
@@ -25,6 +26,7 @@
   },
   "scripts": {
     "generate": "node src/generate.js",
+    "test": "node --test 'test/**/*.test.js'",
     "release": "release-it"
   },
   "devDependencies": {
