@@ -40,3 +40,18 @@ npm run generate
 ## Colors
 
 Palette colors and semantic mappings are taken from the official [Modus themes](https://github.com/protesilaos/modus-themes) by Protesilaos Stavrou.
+
+## Publishing (for maintainers)
+
+This package is automatically published to npm via GitHub Actions when a new [GitHub Release](https://github.com/hron/pi-modus-themes/releases) is created.
+
+### Steps to publish a new version
+
+1. Run `npm run release -- <bump>` where `<bump>` is `minor`, `patch`, or `major`.
+2. Push remote: `git push`.
+3. `release-it` creates a GitHub Release, which triggers the [publish workflow](.github/workflows/publish.yml).
+
+### Required setup
+
+- Install dependencies: `npm install`.
+- Ensure the repository has an `NPM_TOKEN` secret configured under **Settings → Secrets and variables → Actions**. The token must be an [npm automation token](https://docs.npmjs.com/creating-and-viewing-access-tokens) with publish access to this package (or the scope if the package is scoped).

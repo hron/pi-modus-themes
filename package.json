@@ -15,7 +15,19 @@
       "./themes"
     ]
   },
+  "files": [
+    "themes",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "generate": "node src/generate.js"
+    "generate": "node src/generate.js",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^17"
   }
 }
