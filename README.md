@@ -1,6 +1,6 @@
 # [Modus Themes](https://protesilaos.com/emacs/modus-themes) for pi
 
-[![npm version](https://img.shields.io/npm/v/@starcounter28/pi-modus-themes)](https://www.npmjs.com/package/@starcounter28/pi-modus-themes)
+[![npm version](https://img.shields.io/npm/v/pi-modus-themes)](https://www.npmjs.com/package/pi-modus-themes)
 
 ## Previews
 
@@ -14,11 +14,13 @@
 
 ## Install
 
+### npm
+
 ```bash
-pi install /path/to/this/repo
+pi install npm:pi-modus-themes
 ```
 
-Or from a remote:
+### git
 
 ```bash
 pi install git:github.com/hron/pi-modus-themes
@@ -52,5 +54,4 @@ This package is automatically published to npm via GitHub Actions when a new [Gi
 
 ### Required setup
 
-- Install dependencies: `npm install`.
-- Ensure the repository has an `NPM_TOKEN` secret configured under **Settings → Secrets and variables → Actions**. The token must be an [npm automation token](https://docs.npmjs.com/creating-and-viewing-access-tokens) with publish access to this package (or the scope if the package is scoped).
+Add an `NPM_TOKEN` secret in **Settings → Secrets and variables → Actions** with an [npm automation token](https://www.npmjs.com/settings/starcounter28/tokens) that has publish access to `pi-modus-themes`.
