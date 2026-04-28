@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Modus Operandi and Modus Vivendi themes for pi coding agent",
+  "repository": "github:hron/pi-modus-themes",
   "keywords": [
     "pi-package",
     "pi-theme",
